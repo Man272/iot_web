@@ -1,13 +1,203 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.btn2 {
+  background: linear-gradient(
+    92.23deg,
+    #9CECFB ,
+    #65C7F7 ,
+    #406aff 
+  );
+}
+
+.btn2:hover {
+  background: linear-gradient(
+    92.23deg,
+    #0052D4 ,
+    #65C7F7 ,
+    #9CECFB
+  );
+}
+
+.btn3 {
+  background: linear-gradient(
+    92.23deg,
+    #9CECFB ,
+    #406aff 
+  );
+}
+
+.btn3:hover {
+  background: linear-gradient(
+    92.23deg,
+    #0052D4 ,
+    #9CECFB
+  );
+}
+
+.btn4 {
+  background: linear-gradient(
+    92.23deg,
+    #65C7F7 ,
+    #406aff 
+  );
+}
+
+.btn4:hover {
+  background: linear-gradient(
+    92.23deg,
+    #65C7F7 ,
+    #9CECFB
+  );
+}
+
+.btn5 {
+  background: linear-gradient(
+    92.23deg,
+    #A5FECB ,
+    #20BDFF 
+  );
+}
+
+.btn5:hover {
+  background: linear-gradient(
+    92.23deg,
+    #A5FECB ,
+    #20BDFF
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn2 {
+    @apply rounded-full font-primary text-black font-medium font-bold;
+  }
+  .btn3 {
+    @apply rounded-full font-primary text-black font-medium font-bold;
+  }
+  .btn2-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn4 {
+    @apply rounded-full font-primary text-black font-medium font-bold;
+  }
+  .btn4-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+
+  .btn5-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn6 {
+    @apply rounded-full font-primary text-black font-medium font-bold;
+  }
+  .btn6-sm {
+    @apply h-[30px] px-5 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+.text2-gradient {
+  @apply bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] to-[#9CECFB] font-bold font-primary hover:from-[#9CECFB] hover:to-[#0052D4];
+}
+
+.text3-gradient {
+  @apply bg-gradient-to-r text-transparent bg-clip-text from-[#A5FECB] to-[#20BDFF] font-bold font-primary hover:from-[#20BDFF] hover:to-[#A5FECB];
+}
+
+.text4-gradient {
+  @apply bg-gradient-to-r text-transparent bg-clip-text 
+    from-[#667db6] via-[#0082c8] via-[#0082c8] to-[#667db6]
+    font-bold font-primary 
+    hover:from-[#0082c8] hover:via-[#0082c8] hover:via-[#0082c8] hover:to-[#667db6];
+}
+
+.text5-gradient {
+  @apply bg-gradient-to-r text-transparent bg-clip-text from-[#00B4DB] to-[#0083B0] font-bold font-primary;
+}
+
+.text1 {
+  @apply bg-[#1463F3] text-transparent bg-clip-text font-bold font-primary hover:bg-[#1463F3];
+}
+
+.text2 {
+  @apply bg-[#1974D2] text-transparent bg-clip-text font-bold font-primary hover:bg-[#1974D2];
+}
+.text3 {
+  @apply bg-[#55C2C3] text-transparent bg-clip-text font-bold font-primary hover:bg-[#55C2C3];
+}
+.texth1 {
+  @apply bg-[#F6DAE4] text-transparent bg-clip-text font-bold font-primary hover:bg-[#F6DAE4];
+}
+.textp {
+  @apply bg-[#55C2C3] text-transparent bg-clip-text font-bold font-primary hover:bg-[#55C2C3];
+}
+.textspam {
+  @apply bg-[#55C2C3] text-transparent bg-clip-text font-bold font-primary hover:bg-[#55C2C3];
+}
+.textdiv {
+  @apply bg-[#55C2C3] text-transparent bg-clip-text font-bold font-primary hover:bg-[#55C2C3];
 }
