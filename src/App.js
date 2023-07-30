@@ -1,6 +1,6 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
-import BCBG from './assets/ARbl.png';
+import iotbg from './assets/iotbg.png';
 import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Page3 from './components/page3';
@@ -12,8 +12,8 @@ function App() {
   return (
     <div className='app'>
     <Helmet>
-      <title>AR NAVIGATION</title>
-      <link rel="icon" type="image/png" href={BCBG} />
+      <title>GUESTED CONTROLLED</title>
+      <link rel="icon" type="image/png" href={iotbg} />
     </Helmet>
         <Banner/>
         <Page1 />
