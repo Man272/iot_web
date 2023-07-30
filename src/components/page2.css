@@ -1,0 +1,131 @@
+.page2-container {
+  height: 1000px;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+}
+
+.line4 {
+  width: 60%; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+  margin: 17px;
+  justify-content: center;
+  align-items: center;
+}
+
+.line3 {
+  width: 40%; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 17px;
+}
+
+.title3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 524px;
+  height: 510px;
+}
+.title8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 524px;
+  height: 390px;
+}
+
+
+.text-center h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.title4 {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 970px;
+  width: 820px;
+  text-align: center;
+  align-items: center;
+}
+
+.box1 {
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 10px;
+  height: 167px;
+  width: 480px;
+  margin: 10px;
+}
+.box2 {
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 10px;
+  height: 270px;
+  width: 480px;
+  margin: 10px;
+}
+
+.box2 p{
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  margin-left: 15px;
+}
+
+.box1 h4{
+  text-align: center;
+  font-size: 15px; 
+}
+
+.SU img {
+  height: 100px;
+  width: 100px;
+}
+
+.su-container {
+  display: flex;
+  justify-content: center;
+}
+
+.SU{
+  text-align: center;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.SU h5 {
+  font-size: 15px;
+}
+
+.text-center img{
+  max-height: 840px;
+  max-width: 790px;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.text-center h1 {
+  text-transform: uppercase;
+}
