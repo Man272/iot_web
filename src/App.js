@@ -1,6 +1,6 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
-import iotbg from './assets/iotbg.png';
+import ARDUINO from './assets/iotbg.png';
 import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Page3 from './components/page3';
@@ -13,7 +13,7 @@ function App() {
     <div className='app'>
     <Helmet>
       <title>GUESTED CONTROLLED</title>
-      <link rel="icon" type="image/png" href={iotbg} />
+      <link rel="icon" type="image/png" href={ARDUINO} />
     </Helmet>
         <Banner/>
         <Page1 />
